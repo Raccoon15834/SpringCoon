@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/green">
 
     <view
         class="com.example.springcoon.CoonView"
@@ -21,13 +22,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/counter"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:min="-100"
+        android:max="400"/>
     <TextView
         android:layout_width="40dp"
         android:layout_height="70dp"
         android:id="@+id/counter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:text="00"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
